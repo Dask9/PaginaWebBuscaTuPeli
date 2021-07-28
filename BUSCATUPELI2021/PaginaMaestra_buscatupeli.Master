@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra_buscatupeli.master.cs" Inherits="BUSCATUPELI2021.PaginaMaestra_buscatupeli" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+   <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/jquery-3.6.0.js") %>"></script>
+
+    <style type="text/css">
+
+
+
+      
+        .div_tabla_loginyregistro {
+             background-color: black;
+            width: 20%;
+            position: relative;
+            left: -1px;
+            top: -90px;
+          
+        }
+
+
+        
+       
+      
+   
+      
+        .auto-style1 {
+            background-color:#33CCCC ;
+            height: 138px;
+            text-align: center;
+            margin-top: -10px;
+            margin-left: -8px;
+            width: 1349px;
+        }
+      
+
+      
+        .auto-style2 {
+            position: relative;
+            left: 1037px;
+            top: -153px;
+               border-radius: 6px;
+        }
+
+         .auto-style2:hover {
+             background-image: linear-gradient(to  left, black  0%, #434343  51%,#4800ff  100%);
+            text-align: center;
+            text-transform: capitalize;
+            transition-duration: 0.5s;
+            background-size: 200% ;
+            color: white;
+            FONT-SIZE: 15px;
+
+            
+
+              }
+
+
+        .auto-style3 {
+            position: relative;
+            left: 853px;
+            top: -108px;
+            color: deepskyblue;
+             border-radius: 6px;
+        }
+
+        .auto-style3:hover {
+             background-image: linear-gradient(to right, #4800ff  0%, #434343  51%,black  100%);
+            text-align: center;
+            text-transform: capitalize;
+           
+            transition-duration: 0.5s;
+            background-size: 200% ;
+            color: white;
+            FONT-SIZE: 40px;
+            
+
+              }
+
+         .hola{
+             border-radius: 6px;
+         }
+      
+          .hola:hover {
+            background-image: linear-gradient(to right, #00CCFF  0%, #434343  51%, #4800ff  100%);
+            text-align: center;
+            text-transform: capitalize;
+            transition-duration: 0.7s;
+            background-size: 200% ;
+            color:white;
+            FONT-SIZE: 15px;
+              border-radius: 6px;
+            
+
+              }
+
+      
+        .auto-style4 {
+            position: relative;
+            left: -64px;
+            top: 2px;
+        }
+
+      
+        </style>
+</head>
+<body bgcolor="#F1C838">
+
+    <form id="form1" runat="server">
+
+                 <div class="auto-style1">
+                     <br />
+                     <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Monotype Corsiva" Font-Size="98px" Text="Busca Tu Peli" BorderStyle="None" ForeColor="Black" CssClass="auto-style4" Font-Overline="False" Font-Strikeout="False" Font-Underline="False"></asp:Label>
+                     
+                     <br />
+                     
+                     <br /> 
+                     
+          
+                     <br />
+                      
+                      </div>
+   
+                 <asp:Button ID="Button6" BackColor="#999966" runat="server" Text="Ver Trailers" Width="25%" Font-Names="Bradley Hand ITC" Font-Size="XX-Large" Height="46px" CssClass="hola" BorderStyle="None" Font-Bold="True" OnClick="Button6_Click" />
+       
+                 <asp:Button ID="Button5" runat="server" Text="Buscar Pelicula" Width="24%" BackColor="#CCCCFF" Font-Names="Bradley Hand ITC" Font-Size="XX-Large" Height="46px" CssClass="hola" BorderStyle="None" Font-Bold="True" />
+                 <asp:Button ID="Button4" runat="server" Text="Calificar Pelicula" Width="24%" BackColor="#999999" Font-Names="Bradley Hand ITC" Font-Size="XX-Large"  Height="46px" CssClass="hola" BorderStyle="None" Font-Bold="True" />
+                 <asp:Button ID="Button3" runat="server" Text="Plataformas Streaming" Width="25%" BackColor="#CCCCCC" Font-Names="Bradley Hand ITC" Font-Size="XX-Large" Height="46px" CssClass="hola" BorderStyle="None" Font-Bold="True" OnClick="Button3_Click" />
+   
+                 <asp:Button ID="Button1" runat="server" BackColor="White" Text="Registrarse" Font-Names="Bradley Hand ITC" Font-Size="X-Large" Height="39px" Width="180px" CssClass="auto-style2" BorderStyle="None" OnClick="Button1_Click" Font-Bold="True" />
+        
+                 <asp:Button ID="Button2" runat="server" BackColor="Black"  Font-Names="Bradley Hand ITC"  Text="Iniciar Sesion"  Font-Size="X-Large"  Height ="39px" Width="180px" CssClass="auto-style3" BorderStyle="None" OnClick="Button2_Click" Font-Bold="True" />
+        
+
+        
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+</body>
+</html>
